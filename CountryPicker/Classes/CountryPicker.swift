@@ -181,7 +181,7 @@ public class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     private static func countryNamesByCode() -> Set<Country> {
         var countries = Set<Country>()
         let frameworkBundle = Bundle(for: self)
-        guard let jsonPath = frameworkBundle.path(forResource: "CountryPicker.bundle/Data/countryCodes", ofType: "json"), let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
+        guard let jsonPath = frameworkBundle.path(forResource: "CountryCode_CountryCode.bundle/CountryPicker.bundle/Data/countryCodes", ofType: "json"), let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
             return countries
         }
         
